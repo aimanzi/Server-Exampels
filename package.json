@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "start-dev": "nodemon server.js",
+    "start-dev1": "nodemon server1.js",
+    "start-express": "nodemon expessServer.js",
+    "start-main": "nodemon ./micro-servers/mainserver/mainserver.js",
+    "start-srv1": "nodemon ./micro-servers/microserver1/microserver1.js",
+    "start-srv2": "nodemon ./micro-servers/microserver2/microserver2.js",
+    "start-hash": "nodemon ./hashing-server/HashServer.js",
+    "start-hash1": "nodemon ./hashing-server/HashServer1.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "express": "^4.18.1",
+    "http-server": "^14.1.1",
+    "json-server": "^0.17.0",
+    "localStorage": "^1.0.4",
+    "node-localstorage": "^2.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

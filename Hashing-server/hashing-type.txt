@@ -1,0 +1,6 @@
+Name	Class	                                Hash Length
+MD5	    MD5CryptoServiceProvider	            128 bits
+SHA-1	SHA1CryptoServiceProvider SHA1Managed	160 bits
+SHA-256	SHA256Managed	                        256 bits
+SHA-384	SHA384Managed	                        384 bits
+SHA-512	SHA512Managed	                        512 bits
