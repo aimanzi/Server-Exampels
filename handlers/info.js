@@ -3,16 +3,16 @@ function mainPage(req, res) {
 }
 
 function employeeInfo(req, res) {
-    console.log("employee information has calles");
+    // res.send("employee information has calles")
     let info = [{
-        name:"aiman",
+        name: "aiman",
         company: "Ferrero-Israel",
         job: "Key Account",
         divition: "Sales - Wholsalers",
         manager: "Loir J",
     },
     {
-        name:"eiman",
+        name: "eiman",
         company: "Mistrey Of Education",
         job: "Teacher",
         divition: "Matya",
@@ -23,7 +23,7 @@ function employeeInfo(req, res) {
 }
 
 function personalInfo(req, res) {
-    console.log("personal information has calles");
+    // res.send("epersonal information has calles")
     let person = [{
         fname: "aiman",
         lname: "zidane",
