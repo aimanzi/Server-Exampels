@@ -15,6 +15,7 @@ app.get("/", (req, res) => {
 app.get("/hashing", (req, res) => {
     res.send(`Hellow I"m Hashing Your Password`)
     const hash1 = crypto.createHash("sha256").update(key1 + password).digest("hex");
+    console.log(key1 + password);
     console.log(hash1);
 })
 

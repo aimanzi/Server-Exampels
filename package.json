@@ -8,6 +8,7 @@
     "start": "node server.js",
     "start-dev": "nodemon server.js",
     "start-dev1": "nodemon server1.js",
+    "start-exp": "nodemon expressServer.js",
     "start-express": "nodemon ./Express-Server-Router/expessServer.js",
     "start-main": "nodemon ./micro-servers/mainserver/mainserver.js",
     "start-srv1": "nodemon ./micro-servers/microserver1/microserver1.js",
