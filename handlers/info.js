@@ -3,35 +3,36 @@ function mainPage(req, res) {
 }
 
 function employeeInfo(req, res) {
-    // res.send("employee information has calles")
+    console.log("employeeInfo Handler is working");
     let info = [{
-        name: "aiman",
+        name: "Zidane Aiman",
         company: "Ferrero-Israel",
         job: "Key Account",
         divition: "Sales - Wholsalers",
         manager: "Loir J",
     },
     {
-        name: "eiman",
+        name: "Zidane Eiman",
         company: "Mistrey Of Education",
         job: "Teacher",
         divition: "Matya",
         manager: "Eiman A",
     }];
     let jobInfo = JSON.stringify(info)
-    res.end(jobInfo);
+    res.send(jobInfo);
+
 }
 
 function personalInfo(req, res) {
-    // res.send("epersonal information has calles")
+    console.log("pesonalInfo Handler is working");
     let person = [{
-        fname: "aiman",
-        lname: "zidane",
+        fname: "Aiman",
+        lname: "Zidane",
         age: 42
     },
     {
-        fname: "eiman",
-        lname: "zidane",
+        fname: "Eiman",
+        lname: "Zidane",
         age: 40
     }]
     let personinfo = JSON.stringify(person)
