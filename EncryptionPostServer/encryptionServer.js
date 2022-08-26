@@ -5,7 +5,6 @@ const app = expess();
 const dotenv = require("dotenv"); //to activate .env option
 dotenv.config("/.env");
 const port = process.env.PORT;
-
 var bodyParser = require('body-parser'); //to reciving data from frontEnd as JSON file
 app.use(bodyParser.json());
 app.use(cors());
@@ -15,7 +14,7 @@ app.get("", (req, res) => {
     console.log("Home Page is running");
     res.send("Home Page is running")
 })
-app.post("/data", cors(), (req, res) => {
+app.post("/data", (req, res) => {
     console.log("Post Data From FrontEnd page is running");
     let mail = req.body.mail;
     let password = req.body.password;

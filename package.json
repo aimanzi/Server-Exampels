@@ -15,7 +15,9 @@
     "start-srv2": "nodemon ./micro-servers/microserver2/microserver2.js",
     "start-hash": "nodemon ./Encryption-server/HashServer.js",
     "start-hash1": "nodemon ./Encryption-server/HashServer1.js",
-    "start-enc": "nodemon ./EncryptionPostServer/encryptionServer.js"
+    "start-enc": "nodemon ./EncryptionPostServer/encryptionServer.js",
+    "start-enc1": "nodemon ./EncryptionPostServer-Router/encryptionServer1.js"
+
   },
   "keywords": [],
   "author": "",

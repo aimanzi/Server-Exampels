@@ -7,4 +7,4 @@ router.get("/employeeinfo", cors(), info.employeeInfo);
 router.get("/personalinfo", cors(), info.personalInfo);
 
 
-module.exports = router;                              // export the router 
+module.exports = router;      // export the router 
