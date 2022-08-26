@@ -24,7 +24,7 @@ app.post("/data", (req, res) => {
     console.log(mailHash);
     const passwordHash = crypto.createHash("sha256").update(process.env.KEY + password).digest("hex");
     console.log(passwordHash);
-    res.end("Mission Completion")
+   res.json([{mailHash,passwordHash},{mail,password}])
 })
 
 app.listen(port, () => console.log(`the server listen to http://localhost:${port}`));

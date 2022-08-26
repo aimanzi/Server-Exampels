@@ -1,12 +1,12 @@
-const crypto = require("crypto"); // enciding 
 
 function mainPage(req, res) {
-    console.log("Home Page Is Running");
+    console.log("**Home Page**");
     res.end("<h1>Wellcom To Home Page</h1><h1>The Server Is Working</h1>")
 }
 
 function encrFunction(req, res) {
-    console.log("Posring From FrontEnd Is Running");
+    const crypto = require("crypto"); // enciding 
+    console.log("**Posting From FrontEnd**");
     let mail = req.body.mail;
     let password = req.body.password;
     console.log(mail);
@@ -15,7 +15,8 @@ function encrFunction(req, res) {
     console.log(mailHash);
     const passwordHash = crypto.createHash("sha256").update(process.env.KEY + password).digest("hex");
     console.log(passwordHash);
-    res.end("Mission Completion")
+    res.json({ mailHash, passwordHash })
+
 }
 
 

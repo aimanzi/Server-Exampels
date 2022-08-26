@@ -1,9 +1,6 @@
 const express = require("express");
 const cors = require("cors")
 const router = express.Router();
-// const info = require("./handlers/info") // import for handlers functions
-// router.get("/employeeinfo", cors(), info.employeeInfo);
-// router.get("/personalinfo", cors(), info.personalInfo);
 
 router.post("/post", cors(), (req, res) => {
     //send data to app1
